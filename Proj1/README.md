@@ -13,7 +13,7 @@ After data preparation, three plots were generated: two Univariate boxplots of t
 
 ## Fit Regression
 To investigate factors affecting fuel efficiency, a Linear Regression model was trained and tested. The train_test_split function from Sklearn was used for data splitting. 
-The model achieved accuracy scores of 91% and 85% on training and testing data, respectively.
+The model achieved accuracy scores of 80% and 85% on training and testing data, respectively.
 
 ## Conclusion
 While the model demonstrates promising accuracy, it's essential to acknowledge potential sources of error, including technological limitations and individual driving habits. 
