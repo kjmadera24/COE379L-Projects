@@ -4,7 +4,7 @@
 In this project, the goal was to perform an exploratory analysis of a specific dataset and prepare it for predictive analysis using an intelligent system. The primary objective was to achieve the highest accuracy percentage for predictive analysis and fit it to a Linear Regression model. The purpose of this project was to apply skills in data preparation for ease of use and responsible system manipulation to generate accurate predictive results.
 
 ## Exploratory Analysis
-For this project, a dataset containing information about 398 cars was provided. Key characteristics included mileage (mpg), acceleration, and origin.
+For this project, a dataset containing information about 398 cars was provided. Key characteristics included mileage, acceleration, and origin.
 
 Basic data cleaning tasks were performed, including handling null values, duplicates, and unnecessary columns. One-hot encoding was applied, particularly to the origin column, for efficiency.
 
