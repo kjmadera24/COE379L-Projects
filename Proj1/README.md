@@ -1,4 +1,4 @@
-# Software Design Project 1 Report
+# Project 1: Automobile Analysis
 
 ## Overview
 In this project, the goal was to perform an exploratory analysis of a specific dataset and prepare it for predictive analysis using an intelligent system. The primary objective was to achieve the highest accuracy percentage for predictive analysis and fit it to a Linear Regression model. The purpose of this project was to apply skills in data preparation for ease of use and responsible system manipulation to generate accurate predictive results.
