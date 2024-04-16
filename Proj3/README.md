@@ -37,4 +37,8 @@ The repository consists of the following files and folders:
 - `/help`: Provides a summary of available routes and corresponding curl calls.
 - `/models/alt_L5/info`: Returns information about the model, including its version, name, description, and number of parameters.
 - `/models/alt_L5/process`: Accepts a user-inputted image and classifies it as damaged or undamaged.
-- 
+
+### When Done
+You can run either command to stop the container respectively:
+- ```ctrl-C```, ```docker ps```, ```docker stop <container ID>```
+- ```docker-compose down```
