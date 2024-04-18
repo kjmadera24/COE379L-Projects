@@ -38,6 +38,3 @@ In this project, I aimed to classify satellite images captured after Hurricane H
 ### Project 4: 
 
 #### Files:
-- `KM_Proj4.ipynb`
-- `KM_Report4.pdf`
-- `README.md`
