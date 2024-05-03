@@ -41,7 +41,7 @@ def get_help():
     return help + info1 + info2 + info3 + info4 + space
 
 @app.route('/models/lenet5', methods=['GET'])
-def model_info():
+def L5_info():
    return {
       "version": "v1",
       "name": "Lenet-5",
@@ -50,7 +50,7 @@ def model_info():
    }
 
 @app.route('/models/alt_lenet5', methods=['GET'])
-def model_info():
+def altL5_info():
    return {
       "version": "v1",
       "name": "Alt_L5",
@@ -59,7 +59,7 @@ def model_info():
    }
     
 @app.route('/models/mobilenetv2', methods=['GET'])
-def model_info():
+def mNet_info():
    return {
       "version": "v1",
       "name": "MobileNetV2",
@@ -68,7 +68,7 @@ def model_info():
    }
 
 @app.route('/models/alexnetlike', methods=['GET'])
-def model_info():
+def alexNet_info():
    return {
       "version": "v1",
       "name": "AlexNet-like",
