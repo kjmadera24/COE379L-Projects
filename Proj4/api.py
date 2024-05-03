@@ -30,12 +30,16 @@ def preprocess_input(img):
 @app.route('/help', methods=['GET'])
 def get_help():
     help = "\n /help                    Provides a summary of routes and corresponding curl call."
-    info = "\n /models/alt_L5/info      Provides information about the alternate lenet-5 model."
-    process = "\n /models/alt_L5/process   Allows for a user-input to test the model with their own image. \n"
+    info1 = "\n /models/lenet5          Provides information about the lenet-5 model."
+    info2 = "\n /models/alt_lenet5      Provides information about the alternate lenet-5 model."
+    info3 = "\n /models/mobilenetv2     Provides information about the mobile net v2 model."
+    info4 = "\n /models/alexnetlike     Provides information about the alexnet-like model."
+    
+    #process = "\n /models/alt_L5/process   Allows for a user-input to test the model with their own image. \n"
     space = "\n"
-    return help + info + process + space
+    return help + info1 + info2 + info3 + info4 + space
 
-@app.route('/models/L5/info', methods=['GET'])
+@app.route('/models/lenet5', methods=['GET'])
 def model_info():
    return {
       "version": "v1",
@@ -44,7 +48,7 @@ def model_info():
       "number_of_parameters": 2601666
    }
 
-@app.route('/models/alt_L5/info', methods=['GET'])
+@app.route('/models/alt_lenet5', methods=['GET'])
 def model_info():
    return {
       "version": "v1",
@@ -53,7 +57,7 @@ def model_info():
       "number_of_parameters": 2601666
    }
     
-@app.route('/models/mNet/info', methods=['GET'])
+@app.route('/models/mobilenetv2', methods=['GET'])
 def model_info():
    return {
       "version": "v1",
@@ -62,7 +66,7 @@ def model_info():
       "number_of_parameters": 2601666
    }
 
-@app.route('/models/alexNet/info', methods=['GET'])
+@app.route('/models/alexnetlike', methods=['GET'])
 def model_info():
    return {
       "version": "v1",
