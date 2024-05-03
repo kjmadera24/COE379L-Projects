@@ -1,0 +1,13 @@
+---
+version: "3"
+
+services:
+    flask-app:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        image: kamimadera24/ml-api:1.0
+        volumes:
+            - /data:/data
+        ports:
+            - "5000:5000"
