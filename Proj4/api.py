@@ -14,8 +14,10 @@ def get_config():
     # if we couldn't load the config file, return the default config
     return default_config
 
-L5 = tf.keras.models.load_model('models/Lenet5.keras')
-AltL5 = tf.keras.models.load_model('models/Alt_L5.keras')
+#L5 = tf.keras.models.load_model('models/Lenet5.keras')
+#AltL5 = tf.keras.models.load_model('models/AltLenet5.keras')
+#mNetv2 = tf.keras.models.load_model('models/MobileNet.keras')
+#alexNet = tf.keras.models.load_model('models/AlexNet.keras')
 
 def preprocess_input(img):
    """
@@ -43,8 +45,8 @@ def model_info():
    return {
       "version": "v1",
       "name": "Lenet-5",
-      "description": "Classify images of dogs into their respective breeds using the saved Lenet-5 model!!",
-      "number_of_parameters": 2601666
+      "description": "Lenet-5 trained model to classify images of dogs to their respective breeds. \n Had an accuracy score of 22% after 10 epochs!!",
+      "number_of_parameters": 5632124
    }
 
 @app.route('/models/alt_lenet5', methods=['GET'])
@@ -52,8 +54,8 @@ def model_info():
    return {
       "version": "v1",
       "name": "Alt_L5",
-      "description": "Classify images of dogs into their respective breeds using the saved Lenet-5 model!!",
-      "number_of_parameters": 2601666
+      "description": "Alternate Lenet-5 trained model to classify images of dogs to their respective breeds. \n Had an accuracy score of 81% after 10 epochs!!",
+      "number_of_parameters": 9740088  
    }
     
 @app.route('/models/mobilenetv2', methods=['GET'])
@@ -61,8 +63,8 @@ def model_info():
    return {
       "version": "v1",
       "name": "MobileNetV2",
-      "description": "Classify images of dogs into their respective breeds using the saved Alternate Lenet-5 Model!!",
-      "number_of_parameters": 2601666
+      "description": "MobileNetV2 trained model to classify images of dogs to their respective breeds. \n Had an accuracy score of 99% after 10 epochs!!",
+      "number_of_parameters": 2411704 
    }
 
 @app.route('/models/alexnetlike', methods=['GET'])
@@ -70,8 +72,8 @@ def model_info():
    return {
       "version": "v1",
       "name": "AlexNet-like",
-      "description": "Classify images of dogs into their respective breeds using the saved Lenet-5 model!!",
-      "number_of_parameters": 2601666
+      "description": "AlexNet-like trained model to classify images of dogs to their respective breeds. \n Had an accuracy score of 0.8% after 10 epochs!!",
+      "number_of_parameters": 2411704 
    }
 
 
