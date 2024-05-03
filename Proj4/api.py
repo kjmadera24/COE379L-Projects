@@ -1,5 +1,4 @@
 from flask import Flask, request
-import docker-compose.yml
 import tensorflow as tf
 import numpy as np
 
