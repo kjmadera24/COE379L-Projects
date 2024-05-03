@@ -38,7 +38,7 @@ The repository consists of the following files and folders:
 ### Docker Usage
 
 1. Install Docker on your system if not already installed.
-2. Clone this repository: `git clone https://github.com/your_username/dog_breed_classification.git`.
+2. Clone this repository: `git clone https://github.com/kjmadera24/COE379L_Projects.git`.
 3. Navigate to the project directory: `cd Proj4`.
 4. Pull the Docker image: `docker pull kamimadera24/ml-api`.
 5. Run the Docker container:
