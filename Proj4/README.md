@@ -42,11 +42,13 @@ The repository consists of the following files and folders:
 3. Navigate to the project directory: `cd Proj4`.
 4. Pull the Docker image: `docker pull kamimadera24/ml-api`.
 5. Run the Docker container:
-   - If running with a single container: `docker run -it --rm -p 5000:5000 kamimadera24/ml-api`.
-   - If using Docker Compose: `docker-compose up -d`.
+   - If running with a single container: `docker run -it --rm -p 5000:5000 kamimadera24/ml-api`. *You must open another window to call curl commands!!*
+   - If using Docker Compose: `docker-compose up -d`. *Docker compose allows the user to call curl in the same window!!*
 6. Access the API routes to perform predictions.
 
 ### API Routes
+
+To use any of the routes you must 
 
 - `/help`: Provides a summary of available routes and corresponding curl calls.
 - `/models/lenet5/`: Provides information for the saved LeNet-5 model.
