@@ -35,6 +35,15 @@ def get_help():
     space = "\n"
     return help + info + process + space
 
+@app.route('/models/L5/info', methods=['GET'])
+def model_info():
+   return {
+      "version": "v1",
+      "name": "Lenet-5",
+      "description": "Classify images of dogs into their respective breeds using the saved Lenet-5 model!!",
+      "number_of_parameters": 2601666
+   }
+
 @app.route('/models/alt_L5/info', methods=['GET'])
 def model_info():
    return {
@@ -43,37 +52,24 @@ def model_info():
       "description": "Classify images of dogs into their respective breeds using the saved Lenet-5 model!!",
       "number_of_parameters": 2601666
    }
-
-@app.route('/models/alt_L5/process', methods=['POST'])
-def classify_image():
-   im = request.json.get('image')
-   if not im:
-      return {"error": "The `image` field is required"}, 404
-   try:
-      data = preprocess_input(im)
-   except Exception as e:
-      return {"error": f"Could not process the `image` field; details: {e}"}, 404
-   return { "result": model.predict(data).tolist()}
-
-@app.route('/models/L5/info', methods=['GET'])
+    
+@app.route('/models/mNet/info', methods=['GET'])
 def model_info():
    return {
       "version": "v1",
-      "name": "L5",
+      "name": "MobileNetV2",
       "description": "Classify images of dogs into their respective breeds using the saved Alternate Lenet-5 Model!!",
       "number_of_parameters": 2601666
    }
 
-@app.route('/models/L5/process', methods=['POST'])
-def classify_image():
-   im = request.json.get('image')
-   if not im:
-      return {"error": "The `image` field is required"}, 404
-   try:
-      data = preprocess_input(im)
-   except Exception as e:
-      return {"error": f"Could not process the `image` field; details: {e}"}, 404
-   return { "result": model.predict(data).tolist()}
+@app.route('/models/alexNet/info', methods=['GET'])
+def model_info():
+   return {
+      "version": "v1",
+      "name": "AlexNet-like",
+      "description": "Classify images of dogs into their respective breeds using the saved Lenet-5 model!!",
+      "number_of_parameters": 2601666
+   }
 
 
 # start the development server
