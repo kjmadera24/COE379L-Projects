@@ -6,7 +6,7 @@ services:
         build:
             context: ./
             dockerfile: Dockerfile
-        image: kamimadera24/ml-api:1.0
+        image: kamimadera24/ml-api
         volumes:
             - /data:/data
         ports:
